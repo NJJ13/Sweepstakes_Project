@@ -21,7 +21,6 @@ namespace Sweepstakes
         {
             string sweepstakesName = UserInterface.GetUserInputFor("Sweepstakes' name");
             Sweepstakes createdSweepstakes = new Sweepstakes(sweepstakesName);
-            createdSweepstakes = _manager.GetSweepstakes();
             _manager.InsertSweepstakes(createdSweepstakes);
         }
     }

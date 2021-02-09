@@ -26,7 +26,9 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-            contestants.
+            ISweepstakesManager manager;
+            Sweepstakes winningSweepstakes = manager.GetSweepstakes();
+            
             return contestants[winner.RegistrationNumber];
         }
         public void PrintContestantInformation(Contestant contestant)

@@ -30,12 +30,12 @@ namespace Sweepstakes
             get => registrationNumber;
         }
 
-        public Contestant()
+        public Contestant(int RegistrationNumber)
         {
             firstName = UserInterface.GetUserInputFor("first name");
             lastName = UserInterface.GetUserInputFor("last name");
             emailAddress = UserInterface.GetUserInputFor("email address");
-            registrationNumber = 
+            RegistrationNumber = registrationNumber; 
         }
         
     }
