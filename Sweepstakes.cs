@@ -12,7 +12,7 @@ namespace Sweepstakes
         private string name;
         string Name 
         { 
-            get { return name; } 
+            get => name; 
             set { name = value;}
         }
 
@@ -22,15 +22,19 @@ namespace Sweepstakes
         }
         public void RegisterContestant(Contestant contestant)
         {
-
+            contestants.Add(contestant.RegistrationNumber, contestant);
         }
         public Contestant PickWinner()
         {
-            contestants.
+            Contestant winner;
+            return contestants[winner.RegistrationNumber];
         }
         public void PrintContestantInformation(Contestant contestant)
         {
-            contestant.
+            Console.WriteLine(contestant.FirstName);
+            Console.WriteLine(contestant.LastName);
+            Console.WriteLine(contestant.EmailAddress);
+            Console.WriteLine(contestant.RegistrationNumber);
         }
     }
 }

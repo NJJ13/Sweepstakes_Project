@@ -11,11 +11,11 @@ namespace Sweepstakes
         private ISweepstakesManager _manager;
         public MarketingFirm(ISweepstakesManager _manager)
         {
-            
+            this._manager = _manager;
         }
         public void CreateSweepstakes()
         {
-
+            
         }
     }
 }
