@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
-        private Dictionary<int, Contestant> contestants;
+        private Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
         private string name;
         string Name 
         { 
@@ -26,10 +26,7 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-            ISweepstakesManager manager;
-            Sweepstakes winningSweepstakes = manager.GetSweepstakes();
-            
-            return contestants[winner.RegistrationNumber];
+            contestants
         }
         public void PrintContestantInformation(Contestant contestant)
         {

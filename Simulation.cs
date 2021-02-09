@@ -10,14 +10,19 @@ namespace Sweepstakes
     {
         public void CreateMarketingFirmWithManager()
         {
-           bool selector = UserInterface.QueueOrStackSelector();
+            ISweepstakesManager manager;
+            bool selector = UserInterface.QueueOrStackSelector();
             if (selector == true)
             {
-                
+                SweepstakesQueueManager queueManager = new SweepstakesQueueManager();
+                manager = queueManager;
+                MarketingFirm marketingFirm = new MarketingFirm(manager);
             }
             if (selector == false)
             {
-
+                SweepstakesStackManager stackmanager = new SweepstakesStackManager();
+                manager = stackmanager;
+                MarketingFirm marketingFirm = new MarketingFirm(manager);
             }
         }
     }
