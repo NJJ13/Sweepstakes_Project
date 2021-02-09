@@ -18,7 +18,7 @@ namespace Sweepstakes
 
         public Sweepstakes(string name)
         {
-            
+            name = Name;
         }
         public void RegisterContestant(Contestant contestant)
         {
@@ -26,11 +26,11 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-
+            contestants.
         }
         public void PrintContestantInformation(Contestant contestant)
         {
-
+            contestant.
         }
     }
 }
