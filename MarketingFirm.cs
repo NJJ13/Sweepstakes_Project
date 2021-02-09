@@ -15,7 +15,8 @@ namespace Sweepstakes
         }
         public void CreateSweepstakes()
         {
-            
+            string sweepstakesName = UserInterface.GetUserInputFor("Sweepstakes' name");
+            Sweepstakes createdSweepstakes = new Sweepstakes(sweepstakesName);
         }
     }
 }
