@@ -26,7 +26,7 @@ namespace Sweepstakes
         }
         public Contestant PickWinner()
         {
-            Contestant winner;
+            contestants.
             return contestants[winner.RegistrationNumber];
         }
         public void PrintContestantInformation(Contestant contestant)

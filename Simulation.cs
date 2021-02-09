@@ -10,7 +10,15 @@ namespace Sweepstakes
     {
         public void CreateMarketingFirmWithManager()
         {
+           bool selector = UserInterface.QueueOrStackSelector();
+            if (selector == true)
+            {
+                
+            }
+            if (selector == false)
+            {
 
+            }
         }
     }
 }
